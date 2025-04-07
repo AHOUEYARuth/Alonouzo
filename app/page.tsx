@@ -1,103 +1,542 @@
 import Image from "next/image";
-
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Carousel1 from "@/assets/img/carousel-1.jpg";
+import Carousel2 from "@/assets/img/carousel-2.jpg";
+import Carousel3 from "@/assets/img/carousel-3.jpg";
+import Carousel4 from "@/assets/img/carousel-4.jpg";
+import Link from "next/link";
+import Gallery1 from "@/assets/img/portfolio/app-1.jpg";
+import Gallery2 from "@/assets/img/portfolio/pro1.jpg";
+import Gallery3 from "@/assets/img/portfolio/branding-1.jpg";
+import Gallery4 from "@/assets/img/portfolio/books-1.jpg";
+import Gallery5 from "@/assets/img/portfolio/app-2.jpg";
+import Gallery6 from "@/assets/img/portfolio/product-2.jpg";
+import Gallery7 from "@/assets/img/portfolio/branding-2.jpg";
+import Gallery8 from "@/assets/img/portfolio/books-2.jpg";
+import Gallery9 from "@/assets/img/portfolio/app-3.jpg";
+import Gallery10 from "@/assets/img/portfolio/product-3.jpg";
+import Gallery11 from "@/assets/img/portfolio/branding-3.jpg";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <Header />
+      <main>
+        <div className="slider">
+          <div className="list">
+            <div className="item">
+              <Image src={Carousel1} alt="" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+              <div className="slider_content">
+                <div className="title">MAGIC SLIDER</div>
+                <div className="type">FLOWER</div>
+                <div className="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti temporibus quis eum consequuntur voluptate quae
+                  doloribus distinctio. Possimus, sed recusandae. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                </div>
+              </div>
+            </div>
+
+            <div className="item">
+              <Image src={Carousel2} alt="" />
+
+              <div className="slider_content">
+                <div className="title">MAGIC SLIDER</div>
+                <div className="type">NATURE</div>
+                <div className="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti temporibus quis eum consequuntur voluptate quae
+                  doloribus distinctio. Possimus, sed recusandae. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                </div>
+              </div>
+            </div>
+
+            <div className="item">
+              <Image src={Carousel3} alt="" />
+
+              <div className="slider_content">
+                <div className="title">MAGIC SLIDER</div>
+                <div className="type">PLANT</div>
+                <div className="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti temporibus quis eum consequuntur voluptate quae
+                  doloribus distinctio. Possimus, sed recusandae. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                </div>
+              </div>
+            </div>
+
+            <div className="item">
+              <Image src={Carousel4} alt="" />
+
+              <div className="slider_content">
+                <div className="title">MAGIC SLIDER</div>
+                <div className="type">NATURE</div>
+                <div className="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti temporibus quis eum consequuntur voluptate quae
+                  doloribus distinctio. Possimus, sed recusandae. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="images">
+            <div className="item">
+              <Image src={Carousel1} alt="" />
+            </div>
+            <div className="item">
+              <Image src={Carousel2} alt="" />
+            </div>
+            <div className="item">
+              <Image src={Carousel3} alt="" />
+            </div>
+            <div className="item">
+              <Image src={Carousel4} alt="" />
+            </div>
+          </div>
+
+          <div className="nextPrevArrows">
+            <button className="prev">&lt;</button>
+            <button className="next"> &gt; </button>
+          </div>
         </div>
+
+        <div className="container-fluid bg-light overflow-hidden my-30 px-lg-0">
+          <div className="container about px-lg-0">
+            <div className="row g-0 mx-lg-0">
+              <div
+                className="col-lg-6 ps-lg-0 wow fadeIn"
+                data-wow-delay="0.1s"
+                style={{ minHeight: "400px" }}
+              >
+                <div className="position-relative h-100">
+                  <Image
+                    className="position-absolute img-fluid w-100 h-100"
+                    src={Carousel3}
+                    style={{ objectFit: "cover" }}
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                className="col-lg-6 about-text py-5 wow fadeIn"
+                data-wow-delay="0.5s"
+              >
+                <div className="p-lg-5 pe-lg-0">
+                  <h6 className="text-primary">About Us</h6>
+                  <h1 className="mb-4">L&apos;artisanat</h1>
+                  <p style={{ textAlign: "justify", paddingRight: "20px" }}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsam illum odit reprehenderit culpa ut saepe quis sint vero
+                    tempora labore assumenda optio eos architecto, nemo delectus
+                    nam voluptatem hic beatae commodi. Eaque optio facere error
+                    perferendis, reiciendis illum nam aut tempora quaerat magnam
+                    vitae aliquid perspiciatis fugiat qui dolorum quibusdam
+                    eveniet id. Itaque minus error sed quasi ullam ut vitae
+                    ipsum, ipsam aperiam, delectus culpa accusamus ad eaque
+                    asperiores esse autem, illo unde obcaecati quod praesentium.
+                    Vitae voluptate natus excepturi inventore aliquid delectus
+                    possimus reprehenderit velit! Quidem voluptatum id commodi
+                    molestias placeat impedit sapiente quibusdam tempore tenetur
+                    eos deleniti, repellendus minima recusandae odio, delectus
+                    magni incidunt nemo magnam! Dignissimos sint eligendi nisi
+                    enim.
+                  </p>
+                  <Link href="/about" style={{ color: "blue" }}>
+                    Lire plus &gt;&gt;
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="decouverte py-5">
+          <div className="container">
+            <div className="deco_content flex items-center flex-col justify-center">
+              <div className="deco_title">
+                <h1>Découverte</h1>
+              </div>
+              <div className="deco_description">
+                <p style={{ textAlign: "center" }}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                  <br />
+                  Deleniti temporibus quis eum consequuntur voluptate quae
+                </p>
+
+                <div className="articles w-full">
+                  <div className="article_list w-full">
+                    <div className="article_item">
+                      <div className="article_img">
+                        <Image src={Carousel1} alt="" />
+                      </div>
+                      <div className="article_text">
+                        <h4>Article 1</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Deleniti temporibus quis eum consequuntur
+                          voluptate quae doloribus distinctio.
+                        </p>
+                        <div className="article_link">
+                          <Link href="">Lire plus &gt;&gt;</Link>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="article_item small">
+                      <div className="article_img">
+                        <Image src={Carousel3} alt="" />
+                      </div>
+                      <div className="article_text">
+                        <h4>Article 1</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Deleniti temporibus quis eum consequuntur
+                          voluptate quae doloribus distinctio. Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Nam doloribus,
+                          eaque laboriosam expedita, quae ipsa eius excepturi
+                          autem aliquid vero error sint! Ullam omnis sequi
+                          similique veritatis magni voluptatibus qui.
+                        </p>
+                        <div className="article_link">
+                          <Link href="">Lire plus &gt;&gt;</Link>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="article_item small">
+                      <div className="article_img">
+                        <Image src={Carousel3} alt="" />
+                      </div>
+                      <div className="article_text">
+                        <h4>Article 1</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Deleniti temporibus quis eum consequuntur
+                          voluptate quae doloribus distinctio. Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Nam doloribus,
+                          eaque laboriosam expedita, quae ipsa eius excepturi
+                          autem aliquid vero error sint! Ullam omnis sequi
+                          similique veritatis magni voluptatibus qui.
+                        </p>
+                        <div className="article_link">
+                          <Link href="">Lire plus &gt;&gt;</Link>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="article_item">
+                      <div className="article_img">
+                        <Image src={Carousel1} alt="" />
+                      </div>
+                      <div className="article_text">
+                        <h4>Article 1</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Deleniti temporibus quis eum consequuntur
+                          voluptate quae doloribus distinctio.
+                        </p>
+                        <div className="article_link">
+                          <Link href="">Lire plus &gt;&gt;</Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="portfolio" className="portfolio section">
+          <div className="container section-title" data-aos="fade-up">
+            <h2>Portfolio</h2>
+            <div>
+              <span>Check Our</span>{" "}
+              <span className="description-title">Portfolio</span>
+            </div>
+          </div>
+
+          <div className="container-fluid py-5">
+            <div
+              className="isotope-layout"
+              data-default-filter="*"
+              data-layout="masonry"
+              data-sort="original-order"
+            >
+              <div
+                className="row g-0 isotope-container"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery1} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/app-1.jpg"
+                        data-gallery="portfolio-gallery-app"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery2} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/product-1.jpg"
+                        data-gallery="portfolio-gallery-product"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery3} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/branding-1.jpg"
+                        data-gallery="portfolio-gallery-branding"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery4} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/books-1.jpg"
+                        data-gallery="portfolio-gallery-book"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery5} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/app-2.jpg"
+                        data-gallery="portfolio-gallery-app"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery6} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/product-2.jpg"
+                        data-gallery="portfolio-gallery-product"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery7} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/branding-2.jpg"
+                        data-gallery="portfolio-gallery-branding"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery8} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/books-2.jpg"
+                        data-gallery="portfolio-gallery-book"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery9} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/app-3.jpg"
+                        data-gallery="portfolio-gallery-app"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery9} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/product-3.jpg"
+                        data-gallery="portfolio-gallery-product"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery10} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/branding-3.jpg"
+                        data-gallery="portfolio-gallery-branding"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                  <div className="portfolio-content h-100">
+                    <Image src={Gallery11} className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <a
+                        href="assets/img/portfolio/books-3.jpg"
+                        data-gallery="portfolio-gallery-book"
+                        className="glightbox preview-link"
+                      >
+                        <i className="bi bi-zoom-in"></i>
+                      </a>
+                      <a
+                        href="portfolio-details.html"
+                        title="More Details"
+                        className="details-link"
+                      >
+                        <i className="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      <Footer/>
+    </>
   );
 }
