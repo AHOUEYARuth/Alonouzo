@@ -1,20 +1,20 @@
 import React from "react";
-import Carousel2 from "@/assets/img/carousel-2.jpg";
+import Carousel2 from "@/assets/img/Banner/Banneeeeer.png";
 import Link from "next/link";
-import Carousel4 from "@/assets/img/carousel-4.jpg";
-import Carousel3 from "@/assets/img/carousel-3.jpg";
+import Carousel4 from "@/assets/img/Banner/Banneeeeeer 2.png";
+import Carousel3 from "@/assets/img/Banner/Banneeeeeer 3.jpg";
 import Image from "next/image";
-import Gallery1 from "@/assets/img/portfolio/app-1.jpg";
-import Gallery2 from "@/assets/img/portfolio/pro1.jpg";
-import Gallery3 from "@/assets/img/portfolio/branding-1.jpg";
-import Gallery4 from "@/assets/img/portfolio/books-1.jpg";
-import Gallery5 from "@/assets/img/portfolio/app-2.jpg";
-import Gallery6 from "@/assets/img/portfolio/product-2.jpg";
-import Gallery7 from "@/assets/img/portfolio/branding-2.jpg";
-import Gallery8 from "@/assets/img/portfolio/books-2.jpg";
-import Gallery9 from "@/assets/img/portfolio/app-3.jpg";
-import Gallery10 from "@/assets/img/portfolio/product-3.jpg";
-import Gallery11 from "@/assets/img/portfolio/branding-3.jpg";
+import Gallery1 from "@/assets/img/portfolio/1.jpg";
+import Gallery2 from "@/assets/img/portfolio/2.jpg";
+import Gallery3 from "@/assets/img/portfolio/3.jpg";
+import Gallery4 from "@/assets/img/portfolio/4.jpg";
+import Gallery5 from "@/assets/img/portfolio/5.jpg";
+import Gallery6 from "@/assets/img/portfolio/6.jpg";
+import Gallery7 from "@/assets/img/portfolio/7.jpg";
+import Gallery8 from "@/assets/img/portfolio/8.jpg";
+import Gallery9 from "@/assets/img/portfolio/1.jpg";
+import Gallery10 from "@/assets/img/portfolio/11.jpg";
+import Gallery11 from "@/assets/img/portfolio/12.jpg";
 const About = () => {
   return (
     <>
@@ -23,8 +23,7 @@ const About = () => {
         style={{ backgroundImage: `url(${Carousel2.src})` }}
       >
         <div className="hero_content">
-          <h1 className="hero_title">About Us</h1>
-          <p className="hero_subtitle">Learn more about our company</p>
+          <h1 className="hero_title">L&apos;artisanat ancestral béninois</h1>
         </div>
       </div>
 
@@ -50,27 +49,21 @@ const About = () => {
               data-wow-delay="0.5s"
             >
               <div className="p-lg-5 pe-lg-0">
-                <h6 className="text-primary">About Us</h6>
                 <h1 className="mb-4">L&apos;artisanat</h1>
                 <p style={{ textAlign: "justify", paddingRight: "20px" }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  illum odit reprehenderit culpa ut saepe quis sint vero tempora
-                  labore assumenda optio eos architecto, nemo delectus nam
-                  voluptatem hic beatae commodi. Eaque optio facere error
-                  perferendis, reiciendis illum nam aut tempora quaerat magnam
-                  vitae aliquid perspiciatis fugiat qui dolorum quibusdam
-                  eveniet id. Itaque minus error sed quasi ullam ut vitae ipsum,
-                  ipsam aperiam, delectus culpa accusamus ad eaque asperiores
-                  esse autem, illo unde obcaecati quod praesentium. Vitae
-                  voluptate natus excepturi inventore aliquid delectus possimus
-                  reprehenderit velit! Quidem voluptatum id commodi molestias
-                  placeat impedit sapiente quibusdam tempore tenetur eos
-                  deleniti, repellendus minima recusandae odio, delectus magni
-                  incidunt nemo magnam! Dignissimos sint eligendi nisi enim.
+                  L’artisanat traditionnel du Bénin constitue un pilier
+                  essentiel de notre patrimoine culturel immatériel. Il regroupe
+                  un ensemble de savoir-faire transmis de génération en
+                  génération, dont la vannerie, la poterie, la sculpture sur
+                  bois, le tissage du tissu kanvô et bien d’autres formes
+                  d&apos;expression artisanale. Chaque région du pays se
+                  distingue par des techniques et des créations uniques,
+                  empreintes d’histoire, de symbolisme et de créativité. Par
+                  exemple, à Sè, la poterie est un art transmis par les femmes,
+                  donnant naissance à des pièces en argile d’une grande finesse.
+                  À Abomey, les motifs des tissages racontent l’histoire des
+                  rois et des coutumes.
                 </p>
-                <Link href="" style={{ color: "blue" }}>
-                  Lire plus &gt;&gt;
-                </Link>
               </div>
             </div>
           </div>
@@ -85,27 +78,25 @@ const About = () => {
               data-wow-delay="0.5s"
             >
               <div className="p-lg-5 pe-lg-0">
-                <h6 className="text-primary">About Us</h6>
-                <h1 className="mb-4">L&apos;artisanat</h1>
+                <h1 className="mb-4">Importance, Utilités et Valeurs</h1>
                 <p style={{ textAlign: "justify", paddingRight: "20px" }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  illum odit reprehenderit culpa ut saepe quis sint vero tempora
-                  labore assumenda optio eos architecto, nemo delectus nam
-                  voluptatem hic beatae commodi. Eaque optio facere error
-                  perferendis, reiciendis illum nam aut tempora quaerat magnam
-                  vitae aliquid perspiciatis fugiat qui dolorum quibusdam
-                  eveniet id. Itaque minus error sed quasi ullam ut vitae ipsum,
-                  ipsam aperiam, delectus culpa accusamus ad eaque asperiores
-                  esse autem, illo unde obcaecati quod praesentium. Vitae
-                  voluptate natus excepturi inventore aliquid delectus possimus
-                  reprehenderit velit! Quidem voluptatum id commodi molestias
-                  placeat impedit sapiente quibusdam tempore tenetur eos
-                  deleniti, repellendus minima recusandae odio, delectus magni
-                  incidunt nemo magnam! Dignissimos sint eligendi nisi enim.
+                  L’artisanat béninois joue un rôle clé dans le développement
+                  économique, social et culturel du pays. Il fournit des objets
+                  du quotidien (ustensiles, mobiliers, vêtements), des pièces
+                  artistiques (sculptures, tableaux, masques), des articles
+                  décoratifs et des objets cultuels utilisés dans les cérémonies
+                  traditionnelles. Il contribue activement à l’économie locale
+                  en générant des revenus pour de nombreuses familles, en
+                  particulier dans les zones rurales, et en favorisant
+                  l&apos;autonomisation des femmes et des jeunes. En plus d’être
+                  une source d’emploi importante, l’artisanat est un véritable
+                  levier de valorisation de notre identité culturelle. Il
+                  transmet des valeurs fortes : la préservation du savoir, le
+                  respect des traditions, l’innovation à partir de l’héritage,
+                  et la durabilité. Il attire aussi les touristes, renforce
+                  l’image du Bénin à l’international et s’inscrit comme un
+                  pilier du développement durable, inclusif et communautaire.
                 </p>
-                <Link href="" style={{ color: "blue" }}>
-                  Lire plus &gt;&gt;
-                </Link>
               </div>
             </div>
             <div
@@ -126,12 +117,12 @@ const About = () => {
         </div>
       </div>
 
-      <section id="portfolio" className="portfolio section pb-5">
+      <section id="portfolio" className="portfolio section">
         <div className="container section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
+          <h2>Galerie</h2>
           <div>
-            <span>Check Our</span>{" "}
-            <span className="description-title">Portfolio</span>
+            <span className="description-title">Galerie</span>{" "}
+            <span> de Conception</span>
           </div>
         </div>
 
@@ -151,20 +142,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery1} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
-                      href="assets/img/portfolio/app-1.jpg"
+                    <Link
+                      href="@/assets/img/portfolio/app-1.jpg"
                       data-gallery="portfolio-gallery-app"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -173,20 +157,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery2} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
+                    <Link
                       href="assets/img/portfolio/product-1.jpg"
                       data-gallery="portfolio-gallery-product"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -194,20 +171,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery3} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
+                    <Link
                       href="assets/img/portfolio/branding-1.jpg"
                       data-gallery="portfolio-gallery-branding"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -216,20 +186,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery4} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
+                    <Link
                       href="assets/img/portfolio/books-1.jpg"
                       data-gallery="portfolio-gallery-book"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -238,20 +201,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery5} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
+                    <Link
                       href="assets/img/portfolio/app-2.jpg"
                       data-gallery="portfolio-gallery-app"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -259,20 +215,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery6} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
+                    <Link
                       href="assets/img/portfolio/product-2.jpg"
                       data-gallery="portfolio-gallery-product"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -281,20 +230,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery7} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
+                    <Link
                       href="assets/img/portfolio/branding-2.jpg"
                       data-gallery="portfolio-gallery-branding"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -303,20 +245,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery8} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
+                    <Link
                       href="assets/img/portfolio/books-2.jpg"
                       data-gallery="portfolio-gallery-book"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -324,20 +259,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery9} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
+                    <Link
                       href="assets/img/portfolio/app-3.jpg"
                       data-gallery="portfolio-gallery-app"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -346,20 +274,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery9} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
+                    <Link
                       href="assets/img/portfolio/product-3.jpg"
                       data-gallery="portfolio-gallery-product"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -368,20 +289,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery10} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
+                    <Link
                       href="assets/img/portfolio/branding-3.jpg"
                       data-gallery="portfolio-gallery-branding"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -390,20 +304,13 @@ const About = () => {
                 <div className="portfolio-content h-100">
                   <Image src={Gallery11} className="img-fluid" alt="" />
                   <div className="portfolio-info">
-                    <a
+                    <Link
                       href="assets/img/portfolio/books-3.jpg"
                       data-gallery="portfolio-gallery-book"
                       className="glightbox preview-link"
                     >
                       <i className="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      className="details-link"
-                    >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

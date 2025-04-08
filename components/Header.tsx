@@ -3,6 +3,8 @@ import React from 'react';
 import Link from 'next/link';
 import "./componentStyle.css";
 import { usePathname } from "next/navigation";
+import Logo from "@/assets/img/Logo/Logo_100.png"
+import Image from "next/image";
 const Header = () => {
      const pathname = usePathname(); 
     return (
@@ -11,13 +13,37 @@ const Header = () => {
           <div className="content">
             <div>
               <Link href="/" className="logo">
-                AlonouZo
+                <Image src={Logo} alt="Logo" />
               </Link>
             </div>
             <ul className="header_menu">
-              <li>
+              {/* <li>
                 <Link href="/" className={pathname === "/" ? "nav_active" : ""}>
                   Accueil
+                </Link>
+              </li> */}
+              <li>
+                <Link
+                  href="/decouverte"
+                  className={pathname === "/decouverte" ? "nav_active" : ""}
+                >
+                  Découverte
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/training"
+                  className={pathname === "/training" ? "nav_active" : ""}
+                >
+                  Formations
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/marketplace"
+                  className={pathname === "/marketplace" ? "nav_active" : ""}
+                >
+                  MarketPlace
                 </Link>
               </li>
               <li>
@@ -28,23 +54,33 @@ const Header = () => {
                   À Propos
                 </Link>
               </li>
+              {/* <li>
+                <Link
+                  href="/register"
+                  className={pathname === "/register" ? "nav_active" : ""}
+                >
+                  S&apos;inscrire
+                </Link>
+              </li> */}
               <li>
                 <Link
-                  href="/training"
-                  className={pathname === "/training" ? "nav_active" : ""}
+                  href="/login"
+                  className={pathname === "/login" ? "nav_active" : ""}
                 >
-                  Formation
+                  Se connecter
                 </Link>
               </li>
-              <Link
-                href="/marketplace"
-                className={pathname === "/marketplace" ? "nav_active" : ""}
-              >
-                MarketPlace
-              </Link>
-              <Link href="/contact">
+              {/* <li>
+                <Link
+                  href="/cart"
+                  className={pathname === "/cart" ? "nav_active" : ""}
+                >
+                 panier
+                </Link>
+              </li> */}
+              {/* <Link href="/contact">
                 <button className="btn">Contact</button>
-              </Link>
+              </Link> */}
             </ul>
           </div>
         </div>

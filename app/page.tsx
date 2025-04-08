@@ -1,23 +1,33 @@
+"use client";
+import React from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Carousel1 from "@/assets/img/carousel-1.jpg";
-import Carousel2 from "@/assets/img/carousel-2.jpg";
-import Carousel3 from "@/assets/img/carousel-3.jpg";
-import Carousel4 from "@/assets/img/carousel-4.jpg";
+import Carousel1 from "@/assets/img/portfolio/Kanvo2.jpg";
+import Carousel3 from "@/assets/img/portfolio/vannerie1.jpg";
 import Link from "next/link";
-import Gallery1 from "@/assets/img/portfolio/app-1.jpg";
-import Gallery2 from "@/assets/img/portfolio/pro1.jpg";
-import Gallery3 from "@/assets/img/portfolio/branding-1.jpg";
-import Gallery4 from "@/assets/img/portfolio/books-1.jpg";
-import Gallery5 from "@/assets/img/portfolio/app-2.jpg";
-import Gallery6 from "@/assets/img/portfolio/product-2.jpg";
-import Gallery7 from "@/assets/img/portfolio/branding-2.jpg";
-import Gallery8 from "@/assets/img/portfolio/books-2.jpg";
-import Gallery9 from "@/assets/img/portfolio/app-3.jpg";
-import Gallery10 from "@/assets/img/portfolio/product-3.jpg";
-import Gallery11 from "@/assets/img/portfolio/branding-3.jpg";
-export default function Home() {
+import Gallery1 from "@/assets/img/portfolio/1.jpg";
+import Gallery2 from "@/assets/img/portfolio/2.jpg";
+import Gallery3 from "@/assets/img/portfolio/3.jpg";
+import Gallery4 from "@/assets/img/portfolio/4.jpg";
+import Gallery5 from "@/assets/img/portfolio/5.jpg";
+import Gallery6 from "@/assets/img/portfolio/6.jpg";
+import Gallery7 from "@/assets/img/portfolio/7.jpg";
+import Gallery8 from "@/assets/img/portfolio/8.jpg";
+import Gallery9 from "@/assets/img/portfolio/1.jpg";
+import Gallery10 from "@/assets/img/portfolio/11.jpg";
+import Gallery11 from "@/assets/img/portfolio/12.jpg";
+import Banner1 from "@/assets/img/Banner/Banneeeeer.png"
+import Banner2 from "@/assets/img/Banner/Banneeeeeer 3.jpg";
+import Banner3 from "@/assets/img/Banner/Banneeeeeer21.png";
+import Banner4 from "@/assets/img/Banner/Banneeeeeer 4.jpg";
+import About from "@/assets/img/Banner/Banneeeeeer 2.png"
+import Poterie1 from "@/assets/img/portfolio/poterie1.jpg"
+import Sculputre from "@/assets/img/portfolio/12.jpg"
+/* import Loading from "@/components/Loader"
+ */export default function Home() {
+/*   const [loading, setLoading] = useState(true);
+ */
   return (
     <>
       <Header />
@@ -25,11 +35,46 @@ export default function Home() {
         <div className="slider">
           <div className="list">
             <div className="item">
-              <Image src={Carousel1} alt="" />
+              <Image src={Banner1} alt="" />
 
               <div className="slider_content">
-                <div className="title">MAGIC SLIDER</div>
-                <div className="type">FLOWER</div>
+                <div className="title">
+                  L’Artisanat au cœur de la culture béninoise
+                </div>
+                {/*  <div className="type">Artisanat ancestral</div> */}
+                <div className="description">
+                  L’artisanat incarne l’âme de nos traditions et reflète
+                  l’identité de tout un peuple. Entre savoir-faire ancestral et
+                  créativité contemporaine, il transmet des valeurs, des gestes
+                  et une histoire que chaque génération se doit de préserver et
+                  de faire rayonner.
+                </div>
+              </div>
+            </div>
+
+            <div className="item">
+              <Image src={Banner2} alt="" />
+
+              <div className="slider_content">
+                <div className="title">À la découverte des savoir-faire</div>
+                {/* <div className="type">Artisanaux ancestraux</div> */}
+                <div className="description">
+                  Explorez la richesse artisanale de nos régions à travers des
+                  créations uniques. Chaque objet dévoile une histoire, un
+                  geste, une tradition qui se transmet de génération en
+                  génération.
+                </div>
+              </div>
+            </div>
+
+            <div className="item">
+              <Image src={Banner3} alt="" />
+
+              <div className="slider_content">
+                <div className="title">
+                  Apprendre auprès des maîtres artisans
+                </div>
+                {/* <div className="type">Experts Atisanaux</div> */}
                 <div className="description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Deleniti temporibus quis eum consequuntur voluptate quae
@@ -40,46 +85,15 @@ export default function Home() {
             </div>
 
             <div className="item">
-              <Image src={Carousel2} alt="" />
+              <Image src={Banner4} alt="" />
 
               <div className="slider_content">
-                <div className="title">MAGIC SLIDER</div>
-                <div className="type">NATURE</div>
+                <div className="title">Une vitrine pour les talents locaux</div>
+                {/* <div className="type">Talents artitisques </div> */}
                 <div className="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti temporibus quis eum consequuntur voluptate quae
-                  doloribus distinctio. Possimus, sed recusandae. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Sequi, aut.
-                </div>
-              </div>
-            </div>
-
-            <div className="item">
-              <Image src={Carousel3} alt="" />
-
-              <div className="slider_content">
-                <div className="title">MAGIC SLIDER</div>
-                <div className="type">PLANT</div>
-                <div className="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti temporibus quis eum consequuntur voluptate quae
-                  doloribus distinctio. Possimus, sed recusandae. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Sequi, aut.
-                </div>
-              </div>
-            </div>
-
-            <div className="item">
-              <Image src={Carousel4} alt="" />
-
-              <div className="slider_content">
-                <div className="title">MAGIC SLIDER</div>
-                <div className="type">NATURE</div>
-                <div className="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti temporibus quis eum consequuntur voluptate quae
-                  doloribus distinctio. Possimus, sed recusandae. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                  Découvrez des pièces artisanales authentiques à portée de
+                  clic. En achetant local, vous soutenez directement les
+                  artisans et participez à la valorisation de leur savoir-faire.
                 </div>
               </div>
             </div>
@@ -87,16 +101,16 @@ export default function Home() {
 
           <div className="images">
             <div className="item">
-              <Image src={Carousel1} alt="" />
+              <Image src={Banner1} alt="" />
             </div>
             <div className="item">
-              <Image src={Carousel2} alt="" />
+              <Image src={Banner2} alt="" />
             </div>
             <div className="item">
-              <Image src={Carousel3} alt="" />
+              <Image src={Banner3} alt="" />
             </div>
             <div className="item">
-              <Image src={Carousel4} alt="" />
+              <Image src={Banner4} alt="" />
             </div>
           </div>
 
@@ -117,7 +131,7 @@ export default function Home() {
                 <div className="position-relative h-100">
                   <Image
                     className="position-absolute img-fluid w-100 h-100"
-                    src={Carousel3}
+                    src={About}
                     style={{ objectFit: "cover" }}
                     alt=""
                   />
@@ -128,26 +142,22 @@ export default function Home() {
                 data-wow-delay="0.5s"
               >
                 <div className="p-lg-5 pe-lg-0">
-                  <h6 className="text-primary">About Us</h6>
-                  <h1 className="mb-4">L&apos;artisanat</h1>
+                  <h1 className="mb-4">L&apos;artisanat au Bénin</h1>
                   <p style={{ textAlign: "justify", paddingRight: "20px" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam illum odit reprehenderit culpa ut saepe quis sint vero
-                    tempora labore assumenda optio eos architecto, nemo delectus
-                    nam voluptatem hic beatae commodi. Eaque optio facere error
-                    perferendis, reiciendis illum nam aut tempora quaerat magnam
-                    vitae aliquid perspiciatis fugiat qui dolorum quibusdam
-                    eveniet id. Itaque minus error sed quasi ullam ut vitae
-                    ipsum, ipsam aperiam, delectus culpa accusamus ad eaque
-                    asperiores esse autem, illo unde obcaecati quod praesentium.
-                    Vitae voluptate natus excepturi inventore aliquid delectus
-                    possimus reprehenderit velit! Quidem voluptatum id commodi
-                    molestias placeat impedit sapiente quibusdam tempore tenetur
-                    eos deleniti, repellendus minima recusandae odio, delectus
-                    magni incidunt nemo magnam! Dignissimos sint eligendi nisi
-                    enim.
+                    L’artisanat traditionnel du Bénin constitue un pilier
+                    essentiel de notre patrimoine culturel immatériel. Il
+                    regroupe un ensemble de savoir-faire transmis de génération
+                    en génération, dont la vannerie, la poterie, la sculpture
+                    sur bois, le tissage du tissu kanvô et bien d’autres formes
+                    d&apos;expression artisanale. Chaque région du pays se
+                    distingue par des techniques et des créations uniques,
+                    empreintes d’histoire, de symbolisme et de créativité. Par
+                    exemple, à Sè, la poterie est un art transmis par les
+                    femmes, donnant naissance à des pièces en argile d’une
+                    grande finesse. À Abomey, les motifs des tissages racontent
+                    l’histoire des rois et des coutumes
                   </p>
-                  <Link href="/about" style={{ color: "blue" }}>
+                  <Link href="/about" style={{ color: "#693F18" }}>
                     Lire plus &gt;&gt;
                   </Link>
                 </div>
@@ -157,33 +167,46 @@ export default function Home() {
         </div>
 
         <div className="decouverte py-5">
-          <div className="container">
+          <div className="container ">
             <div className="deco_content flex items-center flex-col justify-center">
-              <div className="deco_title">
-                <h1>Découverte</h1>
+              <div className="deco_title section-title">
+                <h2>Découverte</h2>
+                <div>
+                  <span>Découverte des</span>{" "}
+                  <span className="description-title">
+                    Savoir-faire artisanaux ancestraux
+                  </span>
+                </div>
               </div>
               <div className="deco_description">
-                <p style={{ textAlign: "center" }}>
+                {/*  <p style={{ textAlign: "center" }}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
                   <br />
                   Deleniti temporibus quis eum consequuntur voluptate quae
                 </p>
-
+ */}
                 <div className="articles w-full">
                   <div className="article_list w-full">
                     <div className="article_item">
                       <div className="article_img">
-                        <Image src={Carousel1} alt="" />
+                        <Image src={Poterie1} alt="" />
                       </div>
                       <div className="article_text">
-                        <h4>Article 1</h4>
+                        <h4>La Poterie</h4>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Deleniti temporibus quis eum consequuntur
-                          voluptate quae doloribus distinctio.
+                          La poterie est façonnée depuis des siècles au sud du
+                          Bénin. Les potières actuelles portent l&apos;héritage
+                          d&apos;un long passé transmis de mère en fille, cette
+                          transmission se fait mécaniquement de nos jours. Les
+                          poteries sont surtout à usage quotidien comme les
+                          fourneaux, les jarres à eau, les récipients divers
+                          employés pour la préparation des aliments. Quelques
+                          centres sont spécialisés dans la préparation de
+                          poteries cultuelies entrant dans les nombreux rites
+                          animistes.
                         </p>
                         <div className="article_link">
-                          <Link href="">Lire plus &gt;&gt;</Link>
+                          <Link href="/articleDetail">Lire plus &gt;&gt;</Link>
                         </div>
                       </div>
                     </div>
@@ -192,15 +215,23 @@ export default function Home() {
                         <Image src={Carousel3} alt="" />
                       </div>
                       <div className="article_text">
-                        <h4>Article 1</h4>
+                        <h4>La Vannerie</h4>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Deleniti temporibus quis eum consequuntur
-                          voluptate quae doloribus distinctio. Lorem ipsum dolor
-                          sit amet consectetur adipisicing elit. Nam doloribus,
-                          eaque laboriosam expedita, quae ipsa eius excepturi
-                          autem aliquid vero error sint! Ullam omnis sequi
-                          similique veritatis magni voluptatibus qui.
+                          La vannerie est l’art de tisser des fibres végétales
+                          pour créer des objets décoratifs ou utilitaires. C’est
+                          une pratique ancestrale qui existe depuis des siècles
+                          dans de nombreuses cultures à travers le monde, en
+                          particulier au Bénin, et est pratiquée par des hommes
+                          et des femmes dans la commune des Aguégués, dans
+                          certaines zones reculées de la ville de Calavi et
+                          Cotonou, dans le zou, dans le nord. En effet, la
+                          vannerie est un savoir-faire traditionnel aux
+                          multiples applications. Des mains habiles des artisans
+                          vanniers naissent des créations d’une beauté
+                          époustouflante et d’une utilité indéniable.Sacs,
+                          couchettes, récipients de marcher ou étalage, paniers,
+                          chapeaux, couchettes, meubles, transat, objets de
+                          décoration, etc...
                         </p>
                         <div className="article_link">
                           <Link href="">Lire plus &gt;&gt;</Link>
@@ -209,18 +240,27 @@ export default function Home() {
                     </div>
                     <div className="article_item small">
                       <div className="article_img">
-                        <Image src={Carousel3} alt="" />
+                        <Image src={Sculputre} alt="" />
                       </div>
                       <div className="article_text">
-                        <h4>Article 1</h4>
+                        <h4>SCULPTURE DE BOIS</h4>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Deleniti temporibus quis eum consequuntur
-                          voluptate quae doloribus distinctio. Lorem ipsum dolor
-                          sit amet consectetur adipisicing elit. Nam doloribus,
-                          eaque laboriosam expedita, quae ipsa eius excepturi
-                          autem aliquid vero error sint! Ullam omnis sequi
-                          similique veritatis magni voluptatibus qui.
+                          La sculpture sur bois est une pratique artistique
+                          ancestrale profondément ancrée dans les croyances
+                          spirituelles, sociales et politiques des communautés
+                          béninoises. Elle est surtout présente dans les régions
+                          de l’Atakora, le Zou, l’Alibori et à Abomey, le cœur
+                          historique du royaume du Danxomè. La sculpture sur
+                          bois était utilisée pour fabriquer des objets
+                          religieux (masques, fétiches, statues de divinités),
+                          des symboles de pouvoir royal (bâtons de commandement,
+                          trônes) et des objets de la vie quotidienne (couteaux,
+                          instruments de musique). Elle a traversé les âges,
+                          évoluant au fil des siècles, mais elle conserve une
+                          forte dimension rituelle et symbolique. Aujourd’hui,
+                          elle est aussi un moyen d’expression artistique
+                          contemporain.Chaque sculpture a une signification
+                          profonde et une fonction précise, .
                         </p>
                         <div className="article_link">
                           <Link href="">Lire plus &gt;&gt;</Link>
@@ -232,11 +272,22 @@ export default function Home() {
                         <Image src={Carousel1} alt="" />
                       </div>
                       <div className="article_text">
-                        <h4>Article 1</h4>
+                        <h4>TISSAGE TRADITIONNEL DU TISSU KANVÔ</h4>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Deleniti temporibus quis eum consequuntur
-                          voluptate quae doloribus distinctio.
+                          Le kanvô est un tissu ancestral originaire du royaume
+                          du Danxomè, aujourd’hui le Bénin. Traditionnellement
+                          réservé aux rois, reines, et personnalités
+                          importantes, il représente non seulement une forme de
+                          richesse mais aussi un symbole de pouvoir et
+                          d’identité culturelle. Ce tissu a longtemps servi lors
+                          des cérémonies royales, des événements sacrés, des
+                          rituels religieux, et des célébrations importantes. La
+                          production de kanvô est une activité de groupe dans
+                          laquelle les femmes filent, teignent et tissent le
+                          coton, tandis que les hommes sont généralement
+                          responsables de la gestion des métiers à tisser. Le
+                          tissu kanvô est aujourd’hui toujours un atout culturel
+                          majeur, bien qu’il ait évolué et soit maintenan
                         </p>
                         <div className="article_link">
                           <Link href="">Lire plus &gt;&gt;</Link>
@@ -252,10 +303,10 @@ export default function Home() {
 
         <section id="portfolio" className="portfolio section">
           <div className="container section-title" data-aos="fade-up">
-            <h2>Portfolio</h2>
+            <h2>Galerie</h2>
             <div>
-              <span>Check Our</span>{" "}
-              <span className="description-title">Portfolio</span>
+              <span className="description-title">Galerie</span>{" "}
+              <span> de Conception</span>
             </div>
           </div>
 
@@ -275,20 +326,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery1} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
-                        href="assets/img/portfolio/app-1.jpg"
+                      <Link
+                        href="@/assets/img/portfolio/app-1.jpg"
                         data-gallery="portfolio-gallery-app"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -297,20 +341,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery2} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
+                      <Link
                         href="assets/img/portfolio/product-1.jpg"
                         data-gallery="portfolio-gallery-product"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -318,20 +355,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery3} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
+                      <Link
                         href="assets/img/portfolio/branding-1.jpg"
                         data-gallery="portfolio-gallery-branding"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -340,20 +370,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery4} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
+                      <Link
                         href="assets/img/portfolio/books-1.jpg"
                         data-gallery="portfolio-gallery-book"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -362,20 +385,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery5} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
+                      <Link
                         href="assets/img/portfolio/app-2.jpg"
                         data-gallery="portfolio-gallery-app"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -383,20 +399,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery6} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
+                      <Link
                         href="assets/img/portfolio/product-2.jpg"
                         data-gallery="portfolio-gallery-product"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -405,20 +414,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery7} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
+                      <Link
                         href="assets/img/portfolio/branding-2.jpg"
                         data-gallery="portfolio-gallery-branding"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -427,20 +429,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery8} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
+                      <Link
                         href="assets/img/portfolio/books-2.jpg"
                         data-gallery="portfolio-gallery-book"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -448,20 +443,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery9} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
+                      <Link
                         href="assets/img/portfolio/app-3.jpg"
                         data-gallery="portfolio-gallery-app"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -470,20 +458,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery9} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
+                      <Link
                         href="assets/img/portfolio/product-3.jpg"
                         data-gallery="portfolio-gallery-product"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -492,20 +473,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery10} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
+                      <Link
                         href="assets/img/portfolio/branding-3.jpg"
                         data-gallery="portfolio-gallery-branding"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -514,20 +488,13 @@ export default function Home() {
                   <div className="portfolio-content h-100">
                     <Image src={Gallery11} className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <a
+                      <Link
                         href="assets/img/portfolio/books-3.jpg"
                         data-gallery="portfolio-gallery-book"
                         className="glightbox preview-link"
                       >
                         <i className="bi bi-zoom-in"></i>
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        title="More Details"
-                        className="details-link"
-                      >
-                        <i className="bi bi-link-45deg"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -535,8 +502,138 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section id="contact" className="contact section py-30">
+          <div className="container section-title" data-aos="fade-up">
+            <h2>Contact</h2>
+            <div>
+              <span>Besoin d&apos;aide?</span>{" "}
+              <span className="description-title">Contactez nous</span>
+            </div>
+          </div>
+
+          <div className="container" data-aos="fade-up" data-aos-delay="100">
+            <div className="row gy-4">
+              <div className="col-lg-6">
+                <div className="row gy-4">
+                  <div className="col-md-6">
+                    <div
+                      className="info-item"
+                      data-aos="fade"
+                      data-aos-delay="200"
+                    >
+                      <i className="bi bi-geo-alt"></i>
+                      <h3>Adresse</h3>
+                      <p>Atlantique</p>
+                      <p>Cotonou, NY 535022</p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div
+                      className="info-item"
+                      data-aos="fade"
+                      data-aos-delay="300"
+                    >
+                      <i className="bi bi-telephone"></i>
+                      <h3>Téléphone</h3>
+                      <p>+229 01578845</p>
+                      <p>+229 01948845</p>
+                    </div>
+                  </div>
+
+                  <div className="col-md-6">
+                    <div
+                      className="info-item"
+                      data-aos="fade"
+                      data-aos-delay="400"
+                    >
+                      <i className="bi bi-envelope"></i>
+                      <h3>Email</h3>
+                      <p>inovision@gmail.com</p>
+                      <p>contact@ino.com</p>
+                    </div>
+                  </div>
+
+                  <div className="col-md-6">
+                    <div
+                      className="info-item"
+                      data-aos="fade"
+                      data-aos-delay="500"
+                    >
+                      <i className="bi bi-clock"></i>
+                      <h3>Ouvert</h3>
+                      <p>Lundi - Samedi</p>
+                      <p>08h - 18h</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-6">
+                <form
+                  action="forms/contact.php"
+                  method="post"
+                  className="php-email-form"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div className="row gy-4">
+                    <div className="col-md-6">
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Nom"
+                        required
+                      />
+                    </div>
+
+                    <div className="col-md-6 ">
+                      <input
+                        type="email"
+                        className="form-control"
+                        name="email"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+
+                    <div className="col-12">
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="subject"
+                        placeholder="Objet"
+                        required
+                      />
+                    </div>
+
+                    <div className="col-12">
+                      <textarea
+                        className="form-control"
+                        name="message"
+                        rows={6}
+                        placeholder="Message"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div className="col-12 text-center">
+                      {/* <div className="loading">Loading</div>
+                    <div className="error-message"></div>
+                    <div className="sent-message">
+                      Your message has been sent. Thank you!
+                    </div> */}
+
+                      <button type="submit">Envoyez</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

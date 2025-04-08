@@ -5,83 +5,84 @@ const Footer = () => {
     <footer id="footer" className="footer dark-background">
       <div className="container footer-top">
         <div className="row gy-4">
+          {/* À propos */}
           <div className="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" className="logo d-flex align-items-center">
-              <span className="sitename">AlonouZo</span>
+            <a href="" className="logo d-flex align-items-center">
+              <span className="sitename">Alɔnuzɔ́</span>
             </a>
             <div className="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
+              <p>Atlantique</p>
+              <p>cotonou, NY 535022</p>
               <p className="mt-3">
-                <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+                <strong>Téléphone :</strong> <span>+1 5589 55488 55</span>
               </p>
               <p>
-                <strong>Email:</strong> <span>info@example.com</span>
+                <strong>Email :</strong> <span>inovision@gamil.com</span>
               </p>
             </div>
             <div className="social-links d-flex mt-4">
-              <a href="">
+              <a href="#">
                 <i className="bi bi-twitter-x"></i>
               </a>
-              <a href="">
+              <a href="#">
                 <i className="bi bi-facebook"></i>
               </a>
-              <a href="">
+              <a href="#">
                 <i className="bi bi-instagram"></i>
               </a>
-              <a href="">
+              <a href="#">
                 <i className="bi bi-linkedin"></i>
               </a>
             </div>
           </div>
 
+          {/* Liens utiles */}
           <div className="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Navigation</h4>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="#">Accueil</a>
               </li>
               <li>
-                <a href="#">About us</a>
+                <a href="#">À propos</a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="#">Formation</a>
               </li>
               <li>
-                <a href="#">Terms of service</a>
+                <a href="#">Marketplace</a>
               </li>
               <li>
-                <a href="#">Privacy policy</a>
+                <a href="#">Mon panier</a>
               </li>
             </ul>
           </div>
 
+          {/* Liens utilisateur */}
           <div className="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
+            <h4>Espace membre</h4>
             <ul>
               <li>
-                <a href="#">Web Design</a>
+                <a href="#">S’inscrire</a>
               </li>
               <li>
-                <a href="#">Web Development</a>
+                <a href="#">Se connecter</a>
               </li>
               <li>
-                <a href="#">Product Management</a>
+                <a href="#">Conditions d’utilisation</a>
               </li>
               <li>
-                <a href="#">Marketing</a>
-              </li>
-              <li>
-                <a href="#">Graphic Design</a>
+                <a href="#">Politique de confidentialité</a>
               </li>
             </ul>
           </div>
 
+          {/* Newsletter */}
           <div className="col-lg-4 col-md-12 footer-newsletter">
-            <h4>Our Newsletter</h4>
+            <h4>Notre newsletter</h4>
             <p>
-              Subscribe to our newsletter and receive the latest news about our
-              products and services!
+              Abonnez-vous à notre newsletter pour recevoir les dernières
+              actualités sur nos produits et services !
             </p>
             <form
               action="forms/newsletter.php"
@@ -89,27 +90,25 @@ const Footer = () => {
               className="php-email-form"
             >
               <div className="newsletter-form">
-                <input type="email" name="email" />
-                <input type="submit" value="Subscribe" />
+                <input type="email" name="email" placeholder="Votre email" />
+                <input type="submit" value="S’abonner" />
               </div>
               <div className="error-message"></div>
               <div className="sent-message">
-                Your subscription request has been sent. Thank you!
+                Votre demande d’abonnement a bien été envoyée. Merci !
               </div>
             </form>
           </div>
         </div>
       </div>
 
+      {/* Bas de page */}
       <div className="container copyright text-center mt-4">
         <p>
           © <span>Copyright</span>{" "}
-          <strong className="px-1 sitename">Hidayah</strong>{" "}
-          <span>All Rights Reserved</span>
+          <strong className="px-1 sitename">AlonouZo</strong>{" "}
+          <span> - Tous droits réservés</span>
         </p>
-        <div className="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
       </div>
     </footer>
   );

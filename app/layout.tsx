@@ -28,7 +28,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <> {children}</>
+        <a
+          href="#"
+          id="scroll-top"
+          className="scroll-top d-flex align-items-center justify-content-center"
+        >
+          <i className="bi bi-arrow-up-short"></i>
+        </a>
+
         <Script src="/script.js" />
         <Script src="/main.js" />
         <Script src="/js/bootstrap.bundle.min.js" />
