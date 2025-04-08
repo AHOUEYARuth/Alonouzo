@@ -1,9 +1,9 @@
 import React from "react";
-import Carousel2 from "@/assets/img/carousel-2.jpg";
+/* import Carousel2 from "@/assets/img/carousel-2.jpg"; */
 const Contact = () => {
   return (
     <>
-      <div
+      {/* <div
         className="hero_section"
         style={{ backgroundImage: `url(${Carousel2.src})` }}
       >
@@ -11,7 +11,7 @@ const Contact = () => {
           <h1 className="hero_title">Contact</h1>
           <p className="hero_subtitle">Learn more about our company</p>
         </div>
-      </div>
+      </div> */}
 
       <section id="contact" className="contact section py-30">
         <div className="container section-title" data-aos="fade-up">
