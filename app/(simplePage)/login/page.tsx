@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import Carousel2 from "@/assets/img/Banner/Banneeeeer.png";
-import { useState } from "react";
-import "../register/register.css";
+/* import { useState } from "react";
+ */import "../register/register.css";
 import FormField from "@/components/FormField";
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+/*   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState(""); */
   return (
     <>
       <main className="register_main">

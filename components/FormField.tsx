@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FC } from "react";
+import React, { FC } from "react";
 import "./form.css";
 
 interface FormProps {
@@ -22,8 +22,8 @@ const FormField: FC<FormProps> = ({
   value,
   disabled,
   label,
-  error,
-  errorClass,
+ /*  error,
+  errorClass, */
 }) => {
   return (
     <div className="form-group">
