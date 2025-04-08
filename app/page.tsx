@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Carousel1 from "@/assets/img/portfolio/Kanvo2.jpg";
+import Carousel1 from "@/assets/img/portfolio/bis.jpg";
 import Carousel3 from "@/assets/img/portfolio/vannerie1.jpg";
 import Link from "next/link";
 import Gallery1 from "@/assets/img/portfolio/1.jpg";
