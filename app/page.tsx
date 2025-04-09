@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -24,10 +24,20 @@ import Banner4 from "@/assets/img/Banner/Banneeeeeer 4.jpg";
 import About from "@/assets/img/Banner/Banneeeeeer 2.png"
 import Poterie1 from "@/assets/img/portfolio/poterie1.jpg"
 import Sculputre from "@/assets/img/portfolio/12.jpg"
-/* import Loading from "@/components/Loader"
- */export default function Home() {
-/*   const [loading, setLoading] = useState(true);
- */
+import Loading from "@/components/Loader"
+export default function Home() {
+  const [loading, setLoading] = useState(true);
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setLoading(false);
+  }, 5000); 
+
+  return () => clearTimeout(timer);
+}, []); 
+
+  if (loading) {
+  return <Loading />;
+}
   return (
     <>
       <Header />
@@ -76,10 +86,9 @@ import Sculputre from "@/assets/img/portfolio/12.jpg"
                 </div>
                 {/* <div className="type">Experts Atisanaux</div> */}
                 <div className="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti temporibus quis eum consequuntur voluptate quae
-                  doloribus distinctio. Possimus, sed recusandae. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                  Plongez au cœur de l’artisanat grâce à des formations
+                  pratiques dispensées par des experts. Préservez le patrimoine
+                  tout en développant des compétences concrètes et valorisantes
                 </div>
               </div>
             </div>
@@ -179,12 +188,6 @@ import Sculputre from "@/assets/img/portfolio/12.jpg"
                 </div>
               </div>
               <div className="deco_description">
-                {/*  <p style={{ textAlign: "center" }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                  <br />
-                  Deleniti temporibus quis eum consequuntur voluptate quae
-                </p>
- */}
                 <div className="articles w-full">
                   <div className="article_list w-full">
                     <div className="article_item">

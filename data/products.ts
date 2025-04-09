@@ -44,4 +44,25 @@ export const products = [
     image: Article3,
     price: 5000,
   },
+  {
+    id: 7,
+    title: "Poterie",
+    objet: "Sculpture",
+    image: Article3,
+    price: 5000,
+  },
+  {
+    id: 8,
+    title: "Poterie",
+    objet: "Sculpture",
+    image: Article3,
+    price: 5000,
+  },
+  {
+    id: 9,
+    title: "Poterie",
+    objet: "Sculpture",
+    image: Article3,
+    price: 5000,
+  },
 ];

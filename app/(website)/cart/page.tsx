@@ -30,6 +30,8 @@ const Cart = () => {
         className="hero_section"
         style={{ backgroundImage: `url(${Carousel2.src})` }}
       >
+        <div className="overlay"></div>
+
         <div className="hero_content">
           <h1 className="hero_title">Mon panier</h1>
         </div>
@@ -70,7 +72,10 @@ const Cart = () => {
             </div>
 
             <div className="panier-paiement">
-              <p style={{textAlign: "center"}}>Passez votre commande et faite vous <br />livrez en un clique</p>
+              <p style={{ textAlign: "center" }}>
+                Passez votre commande et faite vous <br />
+                livrez en un clique
+              </p>
               <hr />
               <div className="prix"></div>
               <div className="produit-total">

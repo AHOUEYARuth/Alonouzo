@@ -146,7 +146,9 @@ h6{
   align-items: center;
   z-index: 1000;
 }
-
+a{
+    text-decoration: none;
+}
 .modal_content {
   background-color: white;
   padding: 50px;
@@ -194,4 +196,53 @@ h6{
   width: 80%;
   height: 100%;
   padding-top: 10px;
+}
+.sidebar{
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sidebar a{
+    display: block;
+    text-decoration: none;
+    color: #444;
+}
+.sidebar a:hover{
+    color: #724d21fe;
+}
+.dashboard{
+    padding: 20px;
+    background-color: #f2f2f2;
+    width: 80%;
+    height: 100%;
+}
+.dashboard h1{
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+.articles{
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+}
+.firstarticle{
+    color: #555;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+.secondarticle{
+    color: #555;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
 }

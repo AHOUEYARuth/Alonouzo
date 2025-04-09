@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Carousel2 from "@/assets/img/Banner/Banneeeeer.png";
@@ -7,13 +7,28 @@ import Poterie1 from "@/assets/img/portfolio/poterie2.jpg";
 import Sculputre from "@/assets/img/portfolio/12.jpg";
 import Carousel1 from "@/assets/img/portfolio/kanvo1.jpg";
 import Carousel3 from "@/assets/img/portfolio/vannerie1.jpg";
-const page = () => {
+import Loading from "@/components/Loader";
+const Decourverte = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
     return (
       <>
         <div
           className="hero_section"
           style={{ backgroundImage: `url(${Carousel2.src})` }}
         >
+          <div className="overlay"></div>
+
           <div className="hero_content">
             <h1 className="hero_title" style={{ textAlign: "center" }}>
               Découverte des savoirs faire <br />
@@ -21,14 +36,32 @@ const page = () => {
             </h1>
           </div>
         </div>
-        {/* <div className="search mt-5">
+        <div className="search mt-5">
           <div className="container">
-            <div className="search_content">
-              <input type="text" placeholder="Rechercher un article" />
-              <button type="submit">Rechercher</button>
+            <div className="sea_cont">
+              <form
+                action="forms/newsletter.php"
+                method="post"
+                className="php-email-form"
+                style={{
+                  border: "1px solid grey",
+                  borderRadius: "5px",
+                  width: "30%",
+                }}
+              >
+                <div className="newsletter-form">
+                  <input
+                    type="text"
+                    name="search"
+                    placeholder="Tapez votre recherche"
+                    style={{ padding: "10px", width: "70%", outline: "none" }}
+                  />
+                  <input type="submit" value="Rechercher" style={{backgroundColor: "#693F18", height: "44px", margin: "0", width: "30%", color:"#fff"}} />
+                </div>
+              </form>
             </div>
           </div>
-        </div> */}
+        </div>
         <div className="decouverte py-5">
           <div className="container ">
             <div className="deco_content flex items-center flex-col justify-center">
@@ -42,12 +75,6 @@ const page = () => {
                 </div>
               </div> */}
               <div className="deco_description">
-                {/*  <p style={{ textAlign: "center" }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                  <br />
-                  Deleniti temporibus quis eum consequuntur voluptate quae
-                </p>
- */}
                 <div className="articles w-full">
                   <div className="article_list w-full">
                     <div className="article_item">
@@ -167,4 +194,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Decourverte;

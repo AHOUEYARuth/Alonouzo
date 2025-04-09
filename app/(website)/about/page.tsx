@@ -22,6 +22,8 @@ const About = () => {
         className="hero_section"
         style={{ backgroundImage: `url(${Carousel2.src})` }}
       >
+        <div className="overlay"></div>
+
         <div className="hero_content">
           <h1 className="hero_title">L&apos;artisanat ancestral béninois</h1>
         </div>

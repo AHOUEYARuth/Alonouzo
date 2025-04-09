@@ -284,7 +284,7 @@ const ModalForm: React.FC<ModalFormProps> = ({ isOpen, onClose }) => {
                   className="custom_btn"
                   style={{
                     padding: "10px 20px",
-                    backgroundColor: "#007bff",
+                    backgroundColor: "#6A6A2C",
                     color: "white",
                     border: "none",
                     borderRadius: "4px",

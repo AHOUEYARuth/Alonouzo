@@ -46,6 +46,6 @@ function moveSlider(direction) {
     { once: true }
   );
 }
-/* setInterval(() => {
+setInterval(() => {
   moveSlider("next");
-}, 10000); */
+}, 6000);

@@ -67,7 +67,7 @@ const Header = () => {
                   href="/login"
                   className={pathname === "/login" ? "nav_active" : ""}
                 >
-                  Se connecter
+                  <button className='btn'>Se connecter</button>
                 </Link>
               </li>
               {/* <li>

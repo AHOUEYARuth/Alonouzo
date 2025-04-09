@@ -1,14 +1,12 @@
 "use client";
 import React from "react";
-import { useState } from "react";
+import { useEffect,useState } from "react";
 import Link from "next/link";
 import Carousel2 from "@/assets/img/Banner/Banneeeeer.png";
 import Image from "next/image";
 import MenuIcon from "@/assets/img/menu.svg";
 import Article1 from "@/assets/img/portfolio/4.jpg";
-/* import Gallery4 from "@/assets/img/portfolio/4.jpg"; */
-/* import Article2 from "@/assets/img/article2.webp";
-import Article3 from "@/assets/img/article3.webp"; */
+import Loading from "@/components/Loader";
 import StarT from "@/assets/img/start.svg";
 import ModalForm from "@/components/ModalForm";
 import { products } from "@/data/products";
@@ -19,6 +17,19 @@ const MarketPlace = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [sideOpen, setSideOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -36,6 +47,8 @@ const MarketPlace = () => {
         className="hero_section"
         style={{ backgroundImage: `url(${Carousel2.src})` }}
       >
+        <div className="overlay"></div>
+
         <div className="hero_content">
           <h1 className="hero_title">MarketPlace</h1>
         </div>
