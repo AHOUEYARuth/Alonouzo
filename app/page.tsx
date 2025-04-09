@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect, useState} from "react";
+import React/* , {useEffect, useState}  */from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -24,20 +24,20 @@ import Banner4 from "@/assets/img/Banner/Banneeeeeer 4.jpg";
 import About from "@/assets/img/Banner/Banneeeeeer 2.png"
 import Poterie1 from "@/assets/img/portfolio/poterie1.jpg"
 import Sculputre from "@/assets/img/portfolio/12.jpg"
-import Loading from "@/components/Loader"
-export default function Home() {
-  const [loading, setLoading] = useState(true);
+/* import Loading from "@/components/Loader"
+ */export default function Home() {
+  /* const [loading, setLoading] = useState(true);
 useEffect(() => {
   const timer = setTimeout(() => {
     setLoading(false);
-  }, 5000); 
+  }, 2000); 
 
   return () => clearTimeout(timer);
 }, []); 
 
   if (loading) {
   return <Loading />;
-}
+} */
   return (
     <>
       <Header />
