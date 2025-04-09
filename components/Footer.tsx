@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer id="footer" className="footer dark-background">
@@ -41,19 +41,19 @@ const Footer = () => {
             <h4>Navigation</h4>
             <ul>
               <li>
-                <a href="#">Accueil</a>
+                <Link href="/">Accueil</Link>
               </li>
               <li>
-                <a href="#">À propos</a>
+                <Link href="/about">À propos</Link>
               </li>
               <li>
-                <a href="#">Formation</a>
+                <Link href="/training">Formation</Link>
               </li>
               <li>
-                <a href="#">Marketplace</a>
+                <Link href="marketplace">Marketplace</Link>
               </li>
               <li>
-                <a href="#">Mon panier</a>
+                <Link href="/cart">Mon panier</Link>
               </li>
             </ul>
           </div>

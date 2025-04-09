@@ -1,13 +1,19 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import User from "@/assets/img/user.svg";
 import Logout from "@/assets/img/logout.svg";
-import "./dashboard.css";
-const Dashboard = () => {
-  
+import "../dashboard/dashboard.css";
+import ModalForm from "@/components/ModalForm"; // Assure-toi que le chemin est correct
+
+const Creation = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseModal = () => setIsModalOpen(false);
+
   return (
     <>
       <header className="das_header">
@@ -39,25 +45,30 @@ const Dashboard = () => {
 
       <main className="dashboard_main">
         <aside className="sidebar">
-          <Link href="/dashboard">TAbleau de bord</Link>
-          <Link href="/creation">Liste des articles</Link>
+          <Link href="/dashboard">Tableau de bord</Link>
+          <a href="">Liste des articles</a>
         </aside>
         <div className="dashboard">
-          <h1 style={{ color: "#000" }}>
-            Bienvenue dans votre tableau de bord
-          </h1>
-          <div className="articles">
-            <div className="firstarticle">
-              Articles créés:<p>0</p>
-            </div>
-            <div className="secondarticle">
-              Articles publiés:<p>0</p>
+          <h1 style={{ color: "#000" }}>Mes Articles</h1>
+          <div className="prod">
+            <div className="prod_content">
+              <div className="add_prod">
+                <button className="dash_bout" onClick={handleOpenModal}>
+                  Ajouter un article
+                </button>
+              </div>
+              <div className="prod_list">
+                <p>Aucun article disponible</p>
+              </div>
             </div>
           </div>
         </div>
       </main>
+
+      {/* Modal d'ajout d'article */}
+      <ModalForm isOpen={isModalOpen} onClose={handleCloseModal} />
     </>
   );
 };
 
-export default Dashboard;
+export default Creation;
