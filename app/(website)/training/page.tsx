@@ -5,8 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 import Course1 from "@/assets/img/portfolio/poterie1.jpg";
 import Course2 from "@/assets/img/portfolio/vannerie2.jpg";
-import Course3 from "@/assets/img/portfolio/12.jpg";
+import Course3 from "@/assets/img/portfolio/scul11.jpg";
 import course4 from "@/assets/img/portfolio/bis.jpg";
+import Course5 from "@/assets/img/portfolio/forge.jpg";
+import Course6 from "@/assets/img/portfolio/serigr2.jpg";
 import Trainer1 from "@/assets/img//trainer-1.jpg";
 import Trainer2 from "@/assets/img/trainer-1.jpg";
 import Trainer3 from "@/assets/img/trainer-1.jpg";
@@ -216,10 +218,10 @@ const Training = () => {
               data-aos-delay="300"
             >
               <div className="course-item">
-                <Image src={Course3} className="img-fluid" alt="" />
+                <Image src={Course5} className="img-fluid" alt="" />
                 <div className="course-content">
                   <div className="d-flex justify-content-between align-items-center mb-3">
-                    <p className="category">Forgerie</p>
+                    <p className="category">La Forge</p>
                     <p className="price">180 000 Fcfa</p>
                   </div>
 
@@ -253,10 +255,10 @@ const Training = () => {
               data-aos-delay="100"
             >
               <div className="course-item">
-                <Image src={Course1} className="img-fluid" alt="..." />
+                <Image src={Course6} className="img-fluid" alt="..."/>
                 <div className="course-content">
                   <div className="d-flex justify-content-between align-items-center mb-3">
-                    <p className="category">Sérigraphie artisanal</p>
+                    <p className="category">Sérigraphie artisanale</p>
                     <p className="price">169 000 Fcfa</p>
                   </div>
 

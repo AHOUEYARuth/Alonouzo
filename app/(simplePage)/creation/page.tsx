@@ -6,8 +6,7 @@ import Link from "next/link";
 import User from "@/assets/img/user.svg";
 import Logout from "@/assets/img/logout.svg";
 import "../dashboard/dashboard.css";
-import ModalForm from "@/components/ModalForm"; // Assure-toi que le chemin est correct
-
+import ModalForm from "@/components/ModalForm"; 
 const Creation = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 

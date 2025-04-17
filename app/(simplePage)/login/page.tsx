@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Carousel2 from "@/assets/img/Banner/Banneeeeer.png";
+import Carousel2 from "@/assets/img/Banner/Banneeeeeer21.png";
 /* import { useState } from "react";
  */import "../register/register.css";
 import FormField from "@/components/FormField";

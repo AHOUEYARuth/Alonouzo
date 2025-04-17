@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Carousel2 from "@/assets/img/Banner/Banneeeeer.png";
 import Poterie1 from "@/assets/img/portfolio/poterie2.jpg";
-import Sculputre from "@/assets/img/portfolio/12.jpg";
+import Sculputre from "@/assets/img/portfolio/tron.jpg";
 import Carousel1 from "@/assets/img/portfolio/kanvo1.jpg";
-import Carousel3 from "@/assets/img/portfolio/vannerie1.jpg";
+import Carousel3 from "@/assets/img/portfolio/vannerie5.jpg";
 import Loading from "@/components/Loader";
 const Decourverte = () => {
   const [loading, setLoading] = useState(true);

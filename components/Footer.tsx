@@ -53,7 +53,7 @@ const Footer = () => {
                 <Link href="marketplace">Marketplace</Link>
               </li>
               <li>
-                <Link href="/cart">Mon panier</Link>
+                <Link href="/decouverte">Découverte</Link>
               </li>
             </ul>
           </div>

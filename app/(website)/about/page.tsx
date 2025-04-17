@@ -1,20 +1,21 @@
 import React from "react";
 import Carousel2 from "@/assets/img/Banner/Banneeeeer.png";
 import Link from "next/link";
-import Carousel4 from "@/assets/img/Banner/Banneeeeeer 2.png";
+import Carousel4 from "@/assets/img/portfolio/vannerie2.jpg";
 import Carousel3 from "@/assets/img/Banner/Banneeeeeer 3.jpg";
 import Image from "next/image";
 import Gallery1 from "@/assets/img/portfolio/1.jpg";
-import Gallery2 from "@/assets/img/portfolio/2.jpg";
-import Gallery3 from "@/assets/img/portfolio/3.jpg";
+import Gallery2 from "@/assets/img/portfolio/tron.jpg";
+import Gallery3 from "@/assets/img/portfolio/vannerie9.jpg";
 import Gallery4 from "@/assets/img/portfolio/4.jpg";
-import Gallery5 from "@/assets/img/portfolio/5.jpg";
-import Gallery6 from "@/assets/img/portfolio/6.jpg";
-import Gallery7 from "@/assets/img/portfolio/7.jpg";
+import Gallery5 from "@/assets/img/portfolio/scul4.jpg";
+import Gallery6 from "@/assets/img/portfolio/scul7.jpg";
+import Gallery7 from "@/assets/img/portfolio/scul5.jpg";
 import Gallery8 from "@/assets/img/portfolio/8.jpg";
-import Gallery9 from "@/assets/img/portfolio/1.jpg";
-import Gallery10 from "@/assets/img/portfolio/11.jpg";
-import Gallery11 from "@/assets/img/portfolio/12.jpg";
+import Gallery9 from "@/assets/img/portfolio/vannerie7.jpg";
+import Gallery10 from "@/assets/img/portfolio/vannerie5.jpg";
+import Gallery11 from "@/assets/img/portfolio/scul6.jpg";
+import Gallery12 from "@/assets/img/portfolio/vannerie8.jpg";
 const About = () => {
   return (
     <>
@@ -171,7 +172,7 @@ const About = () => {
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                 <div className="portfolio-content h-100">
-                  <Image src={Gallery3} className="img-fluid" alt="" />
+                  <Image src={Gallery6} className="img-fluid" alt="" />
                   <div className="portfolio-info">
                     <Link
                       href="assets/img/portfolio/branding-1.jpg"
@@ -215,7 +216,7 @@ const About = () => {
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                 <div className="portfolio-content h-100">
-                  <Image src={Gallery6} className="img-fluid" alt="" />
+                  <Image src={Gallery3} className="img-fluid" alt="" />
                   <div className="portfolio-info">
                     <Link
                       href="assets/img/portfolio/product-2.jpg"
@@ -245,7 +246,7 @@ const About = () => {
 
               <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                 <div className="portfolio-content h-100">
-                  <Image src={Gallery8} className="img-fluid" alt="" />
+                  <Image src={Gallery9} className="img-fluid" alt="" />
                   <div className="portfolio-info">
                     <Link
                       href="assets/img/portfolio/books-2.jpg"
@@ -259,7 +260,7 @@ const About = () => {
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                 <div className="portfolio-content h-100">
-                  <Image src={Gallery9} className="img-fluid" alt="" />
+                  <Image src={Gallery12} className="img-fluid" alt="" />
                   <div className="portfolio-info">
                     <Link
                       href="assets/img/portfolio/app-3.jpg"
@@ -274,7 +275,7 @@ const About = () => {
 
               <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                 <div className="portfolio-content h-100">
-                  <Image src={Gallery9} className="img-fluid" alt="" />
+                  <Image src={Gallery8} className="img-fluid" alt="" />
                   <div className="portfolio-info">
                     <Link
                       href="assets/img/portfolio/product-3.jpg"

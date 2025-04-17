@@ -4,26 +4,27 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Carousel1 from "@/assets/img/portfolio/bis.jpg";
-import Carousel3 from "@/assets/img/portfolio/vannerie1.jpg";
+import Carousel3 from "@/assets/img/portfolio/vannerie2.jpg";
 import Link from "next/link";
 import Gallery1 from "@/assets/img/portfolio/1.jpg";
-import Gallery2 from "@/assets/img/portfolio/2.jpg";
-import Gallery3 from "@/assets/img/portfolio/3.jpg";
+import Gallery2 from "@/assets/img/portfolio/scul11.jpg";
+import Gallery3 from "@/assets/img/portfolio/vannerie9.jpg";
 import Gallery4 from "@/assets/img/portfolio/4.jpg";
-import Gallery5 from "@/assets/img/portfolio/5.jpg";
-import Gallery6 from "@/assets/img/portfolio/6.jpg";
-import Gallery7 from "@/assets/img/portfolio/7.jpg";
+import Gallery5 from "@/assets/img/portfolio/scul4.jpg";
+import Gallery6 from "@/assets/img/portfolio/scul7.jpg";
+import Gallery7 from "@/assets/img/portfolio/scul5.jpg";
 import Gallery8 from "@/assets/img/portfolio/8.jpg";
-import Gallery9 from "@/assets/img/portfolio/1.jpg";
-import Gallery10 from "@/assets/img/portfolio/11.jpg";
-import Gallery11 from "@/assets/img/portfolio/12.jpg";
+import Gallery9 from "@/assets/img/portfolio/vannerie7.jpg";
+import Gallery10 from "@/assets/img/portfolio/vannerie5.jpg";
+import Gallery11 from "@/assets/img/portfolio/scul6.jpg";
+import Gallery12 from "@/assets/img/portfolio/vannerie8.jpg";
 import Banner1 from "@/assets/img/Banner/Banneeeeer.png"
 import Banner2 from "@/assets/img/Banner/Banneeeeeer 3.jpg";
 import Banner3 from "@/assets/img/Banner/Banneeeeeer21.png";
 import Banner4 from "@/assets/img/Banner/Banneeeeeer 4.jpg";
-import About from "@/assets/img/Banner/Banneeeeeer 2.png"
+import About from "@/assets/img/Banner/Banneeeeeer 3.jpg";
 import Poterie1 from "@/assets/img/portfolio/poterie1.jpg"
-import Sculputre from "@/assets/img/portfolio/12.jpg"
+import Sculputre from "@/assets/img/portfolio/tron.jpg"
 /* import Loading from "@/components/Loader"
  */export default function Home() {
   /* const [loading, setLoading] = useState(true);
@@ -152,7 +153,7 @@ useEffect(() => {
               >
                 <div className="p-lg-5 pe-lg-0">
                   <h1 className="mb-4">L&apos;artisanat au Bénin</h1>
-                  <p style={{ textAlign: "justify", paddingRight: "20px" }}>
+                  <p style={{ textAlign: "justify", paddingRight: "20px" }} className="par">
                     L’artisanat traditionnel du Bénin constitue un pilier
                     essentiel de notre patrimoine culturel immatériel. Il
                     regroupe un ensemble de savoir-faire transmis de génération
@@ -356,7 +357,7 @@ useEffect(() => {
                 </div>
                 <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                   <div className="portfolio-content h-100">
-                    <Image src={Gallery3} className="img-fluid" alt="" />
+                    <Image src={Gallery6} className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <Link
                         href="assets/img/portfolio/branding-1.jpg"
@@ -400,7 +401,7 @@ useEffect(() => {
                 </div>
                 <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                   <div className="portfolio-content h-100">
-                    <Image src={Gallery6} className="img-fluid" alt="" />
+                    <Image src={Gallery3} className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <Link
                         href="assets/img/portfolio/product-2.jpg"
@@ -430,7 +431,7 @@ useEffect(() => {
 
                 <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                   <div className="portfolio-content h-100">
-                    <Image src={Gallery8} className="img-fluid" alt="" />
+                    <Image src={Gallery9} className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <Link
                         href="assets/img/portfolio/books-2.jpg"
@@ -444,7 +445,7 @@ useEffect(() => {
                 </div>
                 <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                   <div className="portfolio-content h-100">
-                    <Image src={Gallery9} className="img-fluid" alt="" />
+                    <Image src={Gallery12} className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <Link
                         href="assets/img/portfolio/app-3.jpg"
@@ -459,7 +460,7 @@ useEffect(() => {
 
                 <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                   <div className="portfolio-content h-100">
-                    <Image src={Gallery9} className="img-fluid" alt="" />
+                    <Image src={Gallery8} className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <Link
                         href="assets/img/portfolio/product-3.jpg"
@@ -489,7 +490,11 @@ useEffect(() => {
 
                 <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                   <div className="portfolio-content h-100">
-                    <Image src={Gallery11} className="img-fluid" alt="" />
+                    <Image
+                      src={Gallery11}
+                      className="img-fluid"
+                      alt=""
+                    />
                     <div className="portfolio-info">
                       <Link
                         href="assets/img/portfolio/books-3.jpg"

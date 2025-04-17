@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Carousel2 from "@/assets/img/Banner/Banneeeeer.png";
-import Article3 from "@/assets/img/portfolio/12.jpg";
+import Article3 from "@/assets/img/portfolio/scul5.jpg";
 import Image from "next/image";
 
 const Cart = () => {
