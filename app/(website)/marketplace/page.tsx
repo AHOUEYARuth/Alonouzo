@@ -61,60 +61,6 @@ const MarketPlace = () => {
               <p>Voir les catégories</p>
             </div>
             <div className="left_section">
-              {/* <div className="left_item">
-                <div className="left_content">
-                  <h2 className="text-xl font-bold mb-2">Categories</h2>
-                  <div className="custom-border-terra"></div>
-                  <div className="content-list">
-                    <ul className="item">
-                      <li></li>
-                      <li>Manches courtes</li>
-                      <li>
-                        <div className="drop">
-                          <span onClick={() => toggleMenu("femme")}>
-                            Mode femme
-                          </span>
-                          <button onClick={() => toggleMenu("femme")}>
-                            {openMenu === "femme" ? "-" : "+"}
-                          </button>
-                        </div>
-                        {openMenu === "femme" && (
-                          <ul
-                            className={`drop_down ${
-                              openMenu === "femme" ? "open" : ""
-                            }`}
-                          >
-                            <li>Tunique</li>
-                            <li className="btom_none">Robe</li>
-                          </ul>
-                        )}
-                      </li>
-
-                      <li>
-                        <div className="drop">
-                          <span onClick={() => toggleMenu("homme")}>
-                            Mode homme
-                          </span>
-                          <button onClick={() => toggleMenu("homme")}>
-                            {openMenu === "homme" ? "-" : "+"}
-                          </button>
-                        </div>
-                        {openMenu === "homme" && (
-                          <ul
-                            className={`drop_down ${
-                              openMenu === "homme" ? "open" : ""
-                            }`}
-                          >
-                            <li>Chemise manche courte</li>
-                            <li className="btom_none">Manches longues</li>
-                          </ul>
-                        )}
-                      </li>
-                      <li>Non classé</li>
-                    </ul>
-                  </div>
-                </div>
-              </div> */}
               <div className="left_item">
                 <div className="left_content">
                   <h2>Trier par prix</h2>
@@ -133,28 +79,6 @@ const MarketPlace = () => {
                   </p>
                 </div>
               </div>
-              {/* <div className="left_item">
-                  <div className="left_content">
-                    <h2>Etiquettes produits</h2>
-                    <div className="custom-border-terra"></div>
-                    <div className="etiquettes_bout">
-                      <button>Accessoire</button>
-                      <button>Broderie</button>
-                      <button>Casual</button>
-                      <button>Casual Mode Femme</button>
-                      <button>Chemise</button>
-                      <button>Élégance</button>
-                      <button>Ensemble Dame</button>
-                      <button>Ensemble Homme</button>
-                      <button>Femme</button>
-                      <button>Intemporel</button>
-                      <button>Kanvo</button>
-                      <button>Lin</button>
-                      <button>Wax</button>
-                      <button>women</button>
-                    </div>
-                  </div>
-                </div> */}
               <div className="left_item">
                 <div className="left_content">
                   <h2>Articles</h2>
@@ -285,67 +209,13 @@ const MarketPlace = () => {
           </div>
           <div className="left_item">
             <div className="left_content">
-              <h2 className="text-xl font-bold mb-2">Categories</h2>
-              <div className="custom-border-terra"></div>
-              <div className="content-list">
-                <ul className="item">
-                  <li>Ensemble 02 pièces</li>
-                  <li>Manches courtes</li>
-                  <li>
-                    <div className="drop">
-                      <span onClick={() => toggleMenu("femme")}>
-                        Mode femme
-                      </span>
-                      <button onClick={() => toggleMenu("femme")}>
-                        {openMenu === "femme" ? "-" : "+"}
-                      </button>
-                    </div>
-                    {openMenu === "femme" && (
-                      <ul
-                        className={`drop_down ${
-                          openMenu === "femme" ? "open" : ""
-                        }`}
-                      >
-                        <li>Tunique</li>
-                        <li className="btom_none">Robe</li>
-                      </ul>
-                    )}
-                  </li>
-
-                  <li>
-                    <div className="drop">
-                      <span onClick={() => toggleMenu("homme")}>
-                        Mode homme
-                      </span>
-                      <button onClick={() => toggleMenu("homme")}>
-                        {openMenu === "homme" ? "-" : "+"}
-                      </button>
-                    </div>
-                    {openMenu === "homme" && (
-                      <ul
-                        className={`drop_down ${
-                          openMenu === "homme" ? "open" : ""
-                        }`}
-                      >
-                        <li>Chemise manche courte</li>
-                        <li className="btom_none">Manches longues</li>
-                      </ul>
-                    )}
-                  </li>
-                  <li>Non classé</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="left_item">
-            <div className="left_content">
               <h2>Trier par prix</h2>
               <div className="custom-border-terra"></div>
               <input
                 id="priceRange"
                 type="range"
-                min="13000"
-                max="200000"
+                min="1000"
+                max="100000"
                 step="1000"
                 value={price}
                 onChange={(e) => setPrice(Number(e.target.value))}
@@ -357,38 +227,16 @@ const MarketPlace = () => {
           </div>
           <div className="left_item">
             <div className="left_content">
-              <h2>Etiquettes produits</h2>
-              <div className="custom-border-terra"></div>
-              <div className="etiquettes_bout">
-                <button>Accessoire</button>
-                <button>Broderie</button>
-                <button>Casual</button>
-                <button>Casual Mode Femme</button>
-                <button>Chemise</button>
-                <button>Élégance</button>
-                <button>Ensemble Dame</button>
-                <button>Ensemble Homme</button>
-                <button>Femme</button>
-                <button>Intemporel</button>
-                <button>Kanvo</button>
-                <button>Lin</button>
-                <button>Wax</button>
-                <button>women</button>
-              </div>
-            </div>
-          </div>
-          <div className="left_item">
-            <div className="left_content">
               <h2>Articles</h2>
               <div className="custom-border-terra"></div>
-              <div className="artile_list">
+              <div className="artile_listp">
                 <div className="article_itemp">
                   <div className="img">
                     <Image src={Article1} alt="" />
                   </div>
                   <div className="article_info">
-                    <h4>Robe courte Feu de l&apos;Amour</h4>
-                    <span>CFA 35.000</span>
+                    <h4>Jarre d&eau</h4>
+                    <span>CFA 3000</span>
                   </div>
                 </div>
                 <div className="article_itemp">
@@ -396,8 +244,8 @@ const MarketPlace = () => {
                     <Image src={Article1} alt="" />
                   </div>
                   <div className="article_info">
-                    <h4>Robe courte Feu de l&apos;Amour</h4>
-                    <span>CFA 35.000</span>
+                    <h4>Foyez</h4>
+                    <span>CFA 2500</span>
                   </div>
                 </div>
                 <div className="article_itemp">
@@ -405,8 +253,8 @@ const MarketPlace = () => {
                     <Image src={Article1} alt="" />
                   </div>
                   <div className="article_info">
-                    <h4>Robe courte Feu de l&apos;Amour</h4>
-                    <span>CFA 35.000</span>
+                    <h4>Marmite</h4>
+                    <span>CFA 2000</span>
                   </div>
                 </div>
               </div>
