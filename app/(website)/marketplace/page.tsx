@@ -12,7 +12,6 @@ import ModalForm from "@/components/ModalForm";
 import { products } from "@/data/products";
 import "./market.css";
 const MarketPlace = () => {
-  const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [price, setPrice] = useState(10000);
   const [isOpen, setIsOpen] = useState(false);
   const [sideOpen, setSideOpen] = useState(false);
@@ -37,9 +36,6 @@ const MarketPlace = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
-  };
-  const toggleMenu = (menu: string) => {
-    setOpenMenu(openMenu === menu ? null : menu);
   };
   return (
     <>
